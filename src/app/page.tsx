@@ -1,69 +1,168 @@
-import Image from "next/image";
+const capabilities = [
+  "SYSTEMS THINKING",
+  "PRODUCT DESIGN",
+  "DATA & ANALYTICS",
+  "AUTOMATION",
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <header className="site-header">
+        <a className="wordmark" href="#top" aria-label="Jenalee De Guzman home">
+          JDG<span>.</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <a className="availability" href="#contact">
+          <span className="availability-dot" />
+          Available for select projects
+        </a>
+      </header>
+
+      <section className="hero" id="top">
+        <div className="hero-kicker mono">
+          SYSTEMS / DATA / AUTOMATION / PRODUCT
+        </div>
+
+        <h1>
+          I turn operational
+          <br />
+          problems into systems
+          <br />
+          <em>people can actually use.</em>
+        </h1>
+
+        <div className="hero-bottom">
+          <p>
+            I work at the intersection of operations, healthcare, data, and
+            technology — designing internal tools, analytics, automations, and
+            digital products from the problem outward.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+
+          <a className="arrow-link" href="#work">
+            Selected work <span>↘</span>
           </a>
         </div>
-      </main>
+
+        <div className="hero-rule" />
+
+        <div className="proof-strip mono">
+          {capabilities.map((capability, index) => (
+            <div className="proof-item" key={capability}>
+              <span>{capability}</span>
+              {index < capabilities.length - 1 && <i>×</i>}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="positioning">
+        <p className="eyebrow mono">HOW I THINK</p>
+
+        <p className="statement">
+          I don&apos;t start with the software.
+          <br />
+          <em>I start with the work.</em>
+        </p>
+
+        <div className="thinking-framework">
+  <div className="thinking-step">
+    <span className="mono"><b>01</b> / UNDERSTAND</span>
+    <p>
+      Who does the work? Where does it break? What gets repeated,
+      delayed, or lost?
+    </p>
+  </div>
+
+  <div className="thinking-step">
+    <span className="mono"><b>02</b> / STRUCTURE</span>
+    <p>
+      What needs to be visible, connected, standardized, or automated?
+    </p>
+  </div>
+
+  <div className="thinking-step">
+    <span className="mono"><b>03</b> / BUILD</span>
+    <p>
+      Design the simplest system that solves the actual problem —
+      then test it against the work.
+    </p>
+  </div>
+</div>
+      </section>
+
+      <section className="work-intro" id="work">
+        <div>
+          <p className="eyebrow mono">SELECTED WORK / 2025—2026</p>
+          <h2>
+            Proof,
+            <br />
+            not promises.
+          </h2>
+        </div>
+
+        <p className="work-note">
+          A selection of systems, analytics, and workflow products built around
+          real operational problems. Public case studies use recreated
+          interfaces and synthetic data to protect confidential information.
+        </p>
+      </section>
+
+      <section className="project-preview">
+  <div className="project-preview-top mono">
+    <span>01 / 03</span>
+    <span>INTERNAL PRODUCT · SYSTEMS DESIGN</span>
+  </div>
+
+  <div className="project-preview-grid">
+    <div className="project-preview-copy">
+      <p className="eyebrow mono">FEATURED CASE STUDY</p>
+
+      <h3>Northstar<br />Workspace</h3>
+
+      <p>
+        One operational workspace for people, performance,
+        submissions, quality, and the work that happens between them.
+      </p>
+
+      <div className="project-tags">
+        <span>Product Strategy</span>
+        <span>Workflow Architecture</span>
+        <span>.NET</span>
+        <span>SQL</span>
+      </div>
+
+      <button type="button" className="case-study-link">
+        Explore the case study <span>↗</span>
+      </button>
     </div>
+
+    <div className="project-canvas">
+      <div className="canvas-index mono">N / 01</div>
+
+      <div className="canvas-message">
+        <span className="mono">THE SYSTEM</span>
+        <strong>
+          One place to see
+          <br />
+          what&apos;s moving —
+          <br />
+          and what isn&apos;t.
+        </strong>
+      </div>
+
+      <span className="canvas-note mono">
+        SANITIZED PORTFOLIO RECREATION
+      </span>
+    </div>
+  </div>
+</section>
+    </main>
   );
 }
