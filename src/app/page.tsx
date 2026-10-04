@@ -1,3 +1,4 @@
+import NorthstarPreview from "@/components/NorthstarPreview";
 const capabilities = [
   "SYSTEMS THINKING",
   "PRODUCT DESIGN",
@@ -144,23 +145,19 @@ export default function Home() {
     </div>
 
     <div className="project-canvas">
-      <div className="canvas-index mono">N / 01</div>
+  <div className="preview-caption">
+  <span className="mono">N / 01</span>
 
-      <div className="canvas-message">
-        <span className="mono">THE SYSTEM</span>
-        <strong>
-          One place to see
-          <br />
-          what&apos;s moving —
-          <br />
-          and what isn&apos;t.
-        </strong>
-      </div>
+  <span className="preview-interaction mono">
+    <i />
+    INTERACTIVE PREVIEW — TRY IT
+  </span>
 
-      <span className="canvas-note mono">
-        SANITIZED PORTFOLIO RECREATION
-      </span>
-    </div>
+  <span className="mono">SANITIZED PORTFOLIO RECREATION</span>
+</div>
+
+  <NorthstarPreview />
+</div>
   </div>
 </section>
     </main>
