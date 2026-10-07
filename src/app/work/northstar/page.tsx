@@ -11,7 +11,7 @@ export default function NorthstarCaseStudy() {
 
         <span>Northstar / Case Study</span>
 
-        <span>01 / 03</span>
+        <span>01 / 02</span>
       </header>
 
       <section className="case-hero">
