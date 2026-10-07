@@ -4292,3 +4292,46 @@ a {
 .contact-resume:hover span {
   transform: translate(3px, -3px);
 }
+
+/* =========================================================
+   NORTHSTAR — AUTOMATION FLOW RESPONSIVE FIX
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .automation-flow {
+    grid-template-columns: 1fr !important;
+  }
+
+  .automation-step {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    padding: 2.5rem 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .automation-arrow {
+    width: 100% !important;
+    height: auto !important;
+
+    padding: 0.25rem 0 1rem !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+
+    border: 0 !important;
+
+    transform: none !important;
+
+    font-size: 0;
+  }
+
+  .automation-arrow::before {
+    content: "↓";
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
