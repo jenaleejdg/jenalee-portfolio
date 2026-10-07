@@ -1,4 +1,4 @@
-import NorthstarPreview from "@/components/NorthstarPreview";
+import Link from "next/link";
 const capabilities = [
   "SYSTEMS THINKING",
   "PRODUCT DESIGN",
@@ -139,25 +139,10 @@ export default function Home() {
         <span>SQL</span>
       </div>
 
-      <button type="button" className="case-study-link">
-        Explore the case study <span>↗</span>
-      </button>
+      <Link href="/work/northstar" className="case-study-link">
+  Explore the case study <span>↗</span>
+</Link>
     </div>
-
-    <div className="project-canvas">
-  <div className="preview-caption">
-  <span className="mono">N / 01</span>
-
-  <span className="preview-interaction mono">
-    <i />
-    INTERACTIVE PREVIEW — TRY IT
-  </span>
-
-  <span className="mono">SANITIZED PORTFOLIO RECREATION</span>
-</div>
-
-  <NorthstarPreview />
-</div>
   </div>
 </section>
     </main>

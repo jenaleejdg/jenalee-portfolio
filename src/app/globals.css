@@ -1797,3 +1797,1536 @@ a {
   font-size: 5px;
   letter-spacing: 0.04em;
 }
+
+/* =========================================================
+   NORTHSTAR CASE STUDY
+   ========================================================= */
+
+.northstar-case-study {
+  background: #f1eee6;
+  color: #171714;
+  min-height: 100vh;
+}
+
+.case-nav {
+  min-height: 78px;
+  padding: 0 4.5vw;
+  border-bottom: 1px solid rgba(23, 23, 20, 0.18);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 2rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-nav > :last-child {
+  justify-self: end;
+}
+
+.case-back {
+  color: inherit;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.case-back:hover {
+  opacity: 0.55;
+}
+
+.case-hero {
+  min-height: calc(100vh - 78px);
+  padding: 7vh 4.5vw 6vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-eyebrow {
+  display: flex;
+  gap: 12px;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.case-eyebrow span {
+  border: 1px solid rgba(23, 23, 20, 0.3);
+  border-radius: 999px;
+  padding: 7px 11px;
+}
+
+.case-hero h1 {
+  max-width: 1450px;
+  margin: 8vh 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8.3vw, 158px);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -0.065em;
+}
+
+.case-hero h1 em {
+  color: #d84d2f;
+  font-weight: 400;
+}
+
+.case-intro-grid {
+  margin-top: auto;
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(520px, 1.1fr);
+  gap: 10vw;
+  align-items: end;
+}
+
+.case-intro {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(19px, 1.45vw, 27px);
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
+.case-meta {
+  border-top: 1px solid rgba(23, 23, 20, 0.35);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.case-meta > div {
+  padding: 18px 24px 0 0;
+}
+
+.case-meta > div + div {
+  padding-left: 24px;
+  border-left: 1px solid rgba(23, 23, 20, 0.18);
+}
+
+.case-meta span,
+.case-section-number {
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.case-meta p {
+  max-width: 240px;
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.case-before {
+  background: #171714;
+  color: #f1eee6;
+  padding: 8vh 4.5vw 10vh;
+}
+
+.case-section-number {
+  color: #d84d2f;
+}
+
+.case-before-heading {
+  padding: 7vh 0 10vh;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 10vw;
+  align-items: end;
+}
+
+.case-before-heading h2 {
+  margin: 0;
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.4vw, 118px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.case-before-heading h2 em {
+  color: #d84d2f;
+  font-weight: 400;
+}
+
+.case-before-copy {
+  max-width: 570px;
+  padding-bottom: 1vh;
+}
+
+.case-before-copy p {
+  margin: 0;
+  font-size: clamp(16px, 1.1vw, 20px);
+  line-height: 1.6;
+}
+
+.case-before-copy p + p {
+  margin-top: 24px;
+  color: rgba(241, 238, 230, 0.65);
+}
+
+.spreadsheet-system {
+  position: relative;
+  min-height: 650px;
+  border-top: 1px solid rgba(241, 238, 230, 0.2);
+  border-bottom: 1px solid rgba(241, 238, 230, 0.2);
+}
+
+.sheet-node {
+  position: absolute;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono, monospace);
+}
+
+.sheet-node::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  margin-bottom: 18px;
+  background: #d84d2f;
+}
+
+.sheet-node span {
+  margin-bottom: 11px;
+  color: #d84d2f;
+  font-size: 10px;
+}
+
+.sheet-node strong {
+  color: #f1eee6;
+  font-size: 12px;
+  letter-spacing: 0.07em;
+}
+
+.sheet-node small {
+  margin-top: 6px;
+  color: rgba(241, 238, 230, 0.42);
+  font-size: 10px;
+}
+
+/* Deliberately scattered:
+   these files lived separately rather than as one system. */
+
+.sheet-one {
+  left: 8%;
+  top: 18%;
+}
+
+.sheet-two {
+  left: 19%;
+  bottom: 15%;
+}
+
+.sheet-three {
+  right: 8%;
+  top: 20%;
+}
+
+.sheet-four {
+  right: 19%;
+  bottom: 13%;
+}
+
+.sheet-five {
+  left: 50%;
+  top: 9%;
+  transform: translateX(-50%);
+  align-items: center;
+  text-align: center;
+}
+
+.sheet-center {
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(241, 238, 230, 0.3);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sheet-center::before,
+.sheet-center::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sheet-center::before {
+  inset: 13px;
+  border: 1px solid rgba(241, 238, 230, 0.07);
+}
+
+.sheet-center::after {
+  width: 7px;
+  height: 7px;
+  top: -4px;
+  background: #d84d2f;
+}
+
+.sheet-center span {
+  margin-bottom: 22px;
+  color: #d84d2f;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.sheet-center strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.case-friction {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.case-friction > div {
+  min-height: 190px;
+  padding: 30px 32px 10px 0;
+}
+
+.case-friction > div + div {
+  padding-left: 32px;
+  border-left: 1px solid rgba(241, 238, 230, 0.18);
+}
+
+.case-friction span {
+  color: #d84d2f;
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+}
+
+.case-friction p {
+  max-width: 300px;
+  margin: 35px 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .case-nav {
+    grid-template-columns: 1fr auto;
+  }
+
+  .case-nav > :nth-child(2) {
+    display: none;
+  }
+
+  .case-hero {
+    min-height: auto;
+    padding-top: 60px;
+  }
+
+  .case-hero h1 {
+    margin-top: 70px;
+  }
+
+  .case-intro-grid,
+  .case-before-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .case-intro-grid {
+    margin-top: 100px;
+  }
+
+  .case-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .case-meta > div {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(23, 23, 20, 0.15);
+  }
+
+  .case-meta > div + div {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .spreadsheet-system {
+    min-height: auto;
+    padding: 50px 0;
+    display: grid;
+    gap: 14px;
+  }
+
+  .sheet-node,
+  .sheet-five {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(241, 238, 230, 0.15);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .sheet-center {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 50px 20px;
+  }
+
+  .system-line {
+    display: none;
+  }
+
+  .case-friction {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-hero h1 {
+    font-size: 52px;
+  }
+
+  .case-eyebrow {
+    flex-wrap: wrap;
+  }
+
+  .case-before-heading h2 {
+    font-size: 52px;
+  }
+
+  .case-friction {
+    grid-template-columns: 1fr;
+  }
+
+  .case-friction > div + div {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(241, 238, 230, 0.18);
+  }
+}
+
+/* =========================================================
+   NORTHSTAR CASE STUDY — THE SYSTEM
+   ========================================================= */
+
+.case-system {
+  padding: 9vh 4.5vw 11vh;
+  background: #f1eee6;
+  color: #171714;
+}
+
+.case-system > .case-section-number {
+  color: #d84d2f;
+}
+
+.system-intro {
+  padding: 7vh 0 11vh;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 10vw;
+  align-items: end;
+}
+
+.system-intro h2 {
+  max-width: 1050px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.4vw, 118px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.system-intro h2 em {
+  color: #d84d2f;
+  font-weight: 400;
+}
+
+.system-intro-copy {
+  max-width: 580px;
+}
+
+.system-intro-copy p {
+  margin: 0;
+  font-size: clamp(16px, 1.1vw, 20px);
+  line-height: 1.6;
+}
+
+.system-intro-copy p + p {
+  margin-top: 24px;
+  color: rgba(23, 23, 20, 0.62);
+}
+
+.system-shift {
+  border-top: 1px solid rgba(23, 23, 20, 0.25);
+  display: grid;
+  grid-template-columns: 0.34fr 0.66fr;
+}
+
+.system-shift-label {
+  padding: 34px 7vw 50px 0;
+}
+
+.system-shift-label span,
+.architecture-heading > span {
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #d84d2f;
+}
+
+.system-shift-label p {
+  max-width: 270px;
+  margin: 28px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.system-shift-grid {
+  border-left: 1px solid rgba(23, 23, 20, 0.18);
+}
+
+.shift-row {
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: 55px 1fr 70px 1fr;
+  align-items: center;
+  border-bottom: 1px solid rgba(23, 23, 20, 0.18);
+}
+
+.shift-number {
+  color: #d84d2f;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+}
+
+.shift-row > div {
+  padding: 20px 24px;
+}
+
+.shift-row small {
+  font-family: var(--font-mono, monospace);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: rgba(23, 23, 20, 0.45);
+}
+
+.shift-row p {
+  margin: 9px 0 0;
+  font-size: clamp(15px, 1.05vw, 19px);
+  line-height: 1.35;
+}
+
+.shift-arrow {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  color: #d84d2f;
+  text-align: center;
+}
+
+.system-architecture {
+  margin-top: 12vh;
+  padding-top: 35px;
+  border-top: 1px solid rgba(23, 23, 20, 0.25);
+}
+
+.architecture-heading {
+  display: grid;
+  grid-template-columns: 0.34fr 0.66fr;
+}
+
+.architecture-heading h3 {
+  max-width: 850px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(45px, 5vw, 90px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.architecture-flow {
+  min-height: 500px;
+  margin-top: 9vh;
+  display: grid;
+  grid-template-columns: 1fr 0.35fr 1fr 0.35fr 1fr;
+  align-items: center;
+}
+
+.architecture-source,
+.architecture-output {
+  min-height: 280px;
+  padding: 30px;
+  border: 1px solid rgba(23, 23, 20, 0.22);
+}
+
+.architecture-source > span,
+.architecture-core > span,
+.architecture-output > span {
+  color: #d84d2f;
+  font-family: var(--font-mono, monospace);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.architecture-source strong {
+  display: block;
+  margin-top: 65px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 2.5vw, 47px);
+  font-weight: 400;
+}
+
+.architecture-source p {
+  max-width: 310px;
+  margin: 22px 0 0;
+  color: rgba(23, 23, 20, 0.62);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.architecture-core {
+  width: min(100%, 330px);
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 50%;
+  background: #171714;
+  color: #f1eee6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.architecture-core strong {
+  margin-top: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(75px, 7vw, 120px);
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.architecture-core p {
+  margin: 22px 0 0;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.architecture-connector {
+  display: flex;
+  align-items: center;
+}
+
+.architecture-connector span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(23, 23, 20, 0.35);
+}
+
+.architecture-connector span::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid rgba(23, 23, 20, 0.6);
+  border-right: 1px solid rgba(23, 23, 20, 0.6);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.output-list {
+  margin-top: 38px;
+}
+
+.output-list p {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(23, 23, 20, 0.14);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(19px, 1.45vw, 27px);
+}
+
+@media (max-width: 900px) {
+  .system-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .system-shift {
+    grid-template-columns: 1fr;
+  }
+
+  .system-shift-grid {
+    border-left: 0;
+    border-top: 1px solid rgba(23, 23, 20, 0.18);
+  }
+
+  .architecture-heading {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .architecture-flow {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .architecture-connector {
+    width: 1px;
+    height: 60px;
+    margin: auto;
+  }
+
+  .architecture-connector span {
+    width: 1px;
+    height: 100%;
+  }
+
+  .architecture-connector span::after {
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%) rotate(135deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .system-intro h2 {
+    font-size: 52px;
+  }
+
+  .shift-row {
+    grid-template-columns: 35px 1fr;
+    padding: 20px 0;
+  }
+
+  .shift-arrow {
+    display: none;
+  }
+
+  .shift-row > div {
+    padding: 12px;
+  }
+
+  .shift-row > div:last-child {
+    grid-column: 2;
+  }
+}
+/* ========================================
+   NORTHSTAR CASE STUDY — 03 / THE PRODUCT
+   ======================================== */
+
+.case-product {
+  background: #f2efe7;
+  color: #171714;
+  padding: 110px 3vw 120px;
+  border-top: 1px solid rgba(23, 23, 20, 0.16);
+}
+
+.case-product-intro {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.case-product-label {
+  margin-bottom: 64px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #df4c2f;
+}
+
+.case-product-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.45fr);
+  gap: 6vw;
+  align-items: end;
+}
+
+.case-product-heading h2 {
+  margin: 0;
+  max-width: 1050px;
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 6.2vw, 7.5rem);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.case-product-heading h2 em {
+  color: #df4c2f;
+  font-weight: 400;
+}
+
+.case-product-copy {
+  max-width: 510px;
+  padding-bottom: 0.65rem;
+  font-size: clamp(1rem, 1.15vw, 1.25rem);
+  line-height: 1.55;
+}
+
+.case-product-copy p {
+  margin: 0;
+}
+
+.case-product-copy p + p {
+  margin-top: 1.4rem;
+  color: rgba(23, 23, 20, 0.62);
+}
+
+
+/* Interactive product */
+
+.case-product-preview {
+  max-width: 1800px;
+  margin: 110px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(23, 23, 20, 0.22);
+}
+
+.case-product-preview-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  font-size: 10px;
+  letter-spacing: 0.11em;
+}
+
+.case-product-preview-header > :last-child {
+  justify-self: end;
+}
+
+.case-product-interaction {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+}
+
+.case-product-interaction i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #df4c2f;
+  animation: northstar-preview-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes northstar-preview-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
+}
+
+.case-product-preview-frame {
+  padding: clamp(18px, 2vw, 34px);
+  background: #ddd5c6;
+  border: 1px solid rgba(23, 23, 20, 0.08);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .case-product {
+    padding: 80px 24px;
+  }
+
+  .case-product-label {
+    margin-bottom: 40px;
+  }
+
+  .case-product-heading {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .case-product-heading h2 {
+    font-size: clamp(3.5rem, 13vw, 6rem);
+  }
+
+  .case-product-copy {
+    max-width: 620px;
+  }
+
+  .case-product-preview {
+    margin-top: 72px;
+  }
+
+  .case-product-preview-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .case-product-preview-header > :last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-product {
+    padding: 64px 18px 80px;
+  }
+
+  .case-product-heading h2 {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+  .case-product-preview-frame {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .case-product-preview-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .case-product-preview-header > :first-child {
+    display: none;
+  }
+}
+
+.case-product-heading h2 {
+  max-width: none;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 900px) {
+  .case-product-heading h2 {
+    text-wrap: wrap;
+  }
+}
+
+/* ========================================
+   NORTHSTAR — PRODUCT DECISIONS
+======================================== */
+
+.case-decisions {
+  background: #171715;
+  color: #f3f0e8;
+  padding: 7rem 3rem 8rem;
+}
+
+.case-decisions-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  column-gap: 8vw;
+  align-items: end;
+  padding-bottom: 6rem;
+}
+
+.case-decisions .case-section-label {
+  grid-column: 1 / -1;
+  display: block;
+  margin-bottom: 4.5rem;
+
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ef5438;
+}
+
+.case-decisions-intro h2 {
+  margin: 0;
+  max-width: 950px;
+
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(4.2rem, 6.8vw, 8rem);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.case-decisions-intro h2 em {
+  color: #ef5438;
+  font-weight: 400;
+}
+
+.case-decisions-intro > p {
+  max-width: 430px;
+  margin: 0 0 0.5rem;
+
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.55;
+  color: rgba(243, 240, 232, 0.72);
+}
+
+
+/* Decision rows */
+
+.decision-list {
+  border-top: 1px solid rgba(243, 240, 232, 0.22);
+}
+
+.decision-item {
+  display: grid;
+  grid-template-columns: 90px minmax(260px, 0.75fr) minmax(300px, 1fr);
+  gap: 3rem;
+  align-items: center;
+
+  min-height: 190px;
+  padding: 2.5rem 0;
+
+  border-bottom: 1px solid rgba(243, 240, 232, 0.18);
+}
+
+.decision-number,
+.decision-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.decision-number {
+  align-self: start;
+  padding-top: 0.35rem;
+  color: #ef5438;
+}
+
+.decision-label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: rgba(243, 240, 232, 0.48);
+}
+
+.decision-item h3 {
+  margin: 0;
+
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.decision-item > p {
+  justify-self: end;
+  width: min(100%, 520px);
+  margin: 0;
+
+  font-size: clamp(0.95rem, 1.05vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(243, 240, 232, 0.7);
+}
+
+
+/* Tablet / mobile */
+
+@media (max-width: 900px) {
+  .case-decisions {
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  .case-decisions-intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .case-decisions .case-section-label {
+    margin-bottom: 2rem;
+  }
+
+  .case-decisions-intro h2 {
+    font-size: clamp(3.5rem, 12vw, 6rem);
+  }
+
+  .decision-item {
+    grid-template-columns: 50px 1fr;
+    gap: 1.5rem;
+  }
+
+  .decision-item > p {
+    grid-column: 2;
+    justify-self: start;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-decisions {
+    padding-inline: 1.25rem;
+  }
+
+  .case-decisions-intro {
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 0.55fr);
+}
+
+.case-decisions-intro h2 {
+  max-width: none;
+  font-size: clamp(4.2rem, 6.2vw, 7.5rem);
+}
+
+  .decision-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 2.5rem 0;
+  }
+
+  .decision-number {
+    padding: 0;
+  }
+
+  .decision-item > p {
+    grid-column: 1;
+  }
+}
+
+/* ========================================
+   NORTHSTAR — AUTOMATION LAYER
+======================================== */
+
+.case-automation {
+  background: #f3f0e8;
+  color: #171715;
+  padding: 7rem 3rem 8rem;
+}
+
+.automation-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.55fr);
+  column-gap: 8vw;
+  align-items: end;
+  padding-bottom: 7rem;
+}
+
+.case-automation .case-section-label {
+  grid-column: 1 / -1;
+  display: block;
+  margin-bottom: 4.5rem;
+
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ef5438;
+}
+
+.automation-intro h2 {
+  margin: 0;
+  max-width: 1050px;
+
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(4.2rem, 6.3vw, 7.6rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.automation-intro h2 em {
+  color: #ef5438;
+  font-weight: 400;
+}
+
+.automation-intro > p {
+  max-width: 440px;
+  margin: 0 0 0.5rem;
+
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+  line-height: 1.55;
+  color: rgba(23, 23, 21, 0.68);
+}
+
+
+/* Automation flow */
+
+.automation-flow {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr) 48px
+    minmax(0, 1fr) 48px
+    minmax(0, 1fr) 48px
+    minmax(0, 1fr);
+
+  align-items: stretch;
+
+  border-top: 1px solid rgba(23, 23, 21, 0.22);
+  border-bottom: 1px solid rgba(23, 23, 21, 0.22);
+}
+
+.automation-step {
+  min-height: 300px;
+  padding: 2.5rem 1.5rem 2.75rem 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.automation-step > span {
+  display: block;
+  margin-bottom: 4rem;
+
+  font-family: var(--font-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ef5438;
+}
+
+.automation-step strong {
+  display: block;
+  max-width: 260px;
+  margin-bottom: 1.5rem;
+
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(1.8rem, 2.4vw, 3rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.automation-step p {
+  max-width: 300px;
+  margin: auto 0 0;
+
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(23, 23, 21, 0.66);
+}
+
+.automation-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  color: #ef5438;
+
+  border-left: 1px solid rgba(23, 23, 21, 0.14);
+  border-right: 1px solid rgba(23, 23, 21, 0.14);
+}
+
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .automation-flow {
+    grid-template-columns: 1fr 40px 1fr;
+  }
+
+  .automation-flow .automation-step:nth-of-type(3) {
+    border-top: 1px solid rgba(23, 23, 21, 0.18);
+  }
+}
+
+@media (max-width: 900px) {
+  .case-automation {
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  .automation-intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .case-automation .case-section-label {
+    margin-bottom: 2rem;
+  }
+
+  .automation-intro h2 {
+    font-size: clamp(3.5rem, 12vw, 6rem);
+  }
+
+  .automation-flow {
+    display: block;
+  }
+
+  .automation-step {
+    min-height: 0;
+    padding: 2.5rem 0;
+  }
+
+  .automation-step > span {
+    margin-bottom: 2rem;
+  }
+
+  .automation-step p {
+    margin-top: 2rem;
+  }
+
+  .automation-arrow {
+    justify-content: flex-start;
+    padding: 0.25rem 0;
+
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid rgba(23, 23, 21, 0.15);
+  }
+
+  .automation-arrow {
+    font-size: 0;
+  }
+
+  .automation-arrow::after {
+    content: "↓";
+    font-size: 1.4rem;
+    color: #ef5438;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-automation {
+    padding-inline: 1.25rem;
+  }
+
+  .automation-intro h2 br {
+    display: none;
+  }
+}
+
+/* =========================================
+   NORTHSTAR — IMPACT / OWNERSHIP
+   ========================================= */
+
+.impact-section {
+  background: #171715;
+  color: #f2efe7;
+  padding: 90px 3% 100px;
+}
+
+.impact-inner {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.impact-kicker,
+.ownership-kicker {
+  display: block;
+  color: #f05236;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.impact-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.45fr);
+  gap: 8vw;
+  align-items: end;
+  padding: 60px 0 80px;
+}
+
+.impact-hero h2,
+.ownership-block h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
+
+.impact-hero h2 {
+  font-size: clamp(64px, 7vw, 136px);
+  line-height: 0.9;
+}
+
+.impact-hero h2 em,
+.ownership-block h2 em {
+  color: #f05236;
+  font-weight: 400;
+}
+
+.impact-hero > p {
+  margin: 0;
+  max-width: 440px;
+  font-size: clamp(16px, 1.15vw, 21px);
+  line-height: 1.5;
+}
+
+.impact-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(242, 239, 231, 0.2);
+  border-bottom: 1px solid rgba(242, 239, 231, 0.2);
+}
+
+.impact-points article {
+  min-height: 310px;
+  padding: 38px 48px 42px 0;
+}
+
+.impact-points article + article {
+  border-left: 1px solid rgba(242, 239, 231, 0.2);
+  padding-left: 48px;
+}
+
+.impact-points article > span {
+  color: #f05236;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.impact-points h3 {
+  margin: 70px 0 28px;
+  max-width: 390px;
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 3vw, 56px);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.impact-points p {
+  margin: 0;
+  max-width: 410px;
+  color: rgba(242, 239, 231, 0.65);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ownership-block {
+  margin-top: 120px;
+  padding-top: 42px;
+  border-top: 1px solid rgba(242, 239, 231, 0.28);
+}
+
+.ownership-block h2 {
+  max-width: 1300px;
+  margin-top: 70px;
+  font-size: clamp(58px, 6.4vw, 122px);
+  line-height: 0.91;
+}
+
+.ownership-disciplines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 64px;
+}
+
+.ownership-disciplines span {
+  border: 1px solid rgba(242, 239, 231, 0.35);
+  border-radius: 999px;
+  padding: 13px 19px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .impact-section {
+    padding: 72px 24px 80px;
+  }
+
+  .impact-hero {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    padding: 48px 0 70px;
+  }
+
+  .impact-hero h2 {
+    font-size: clamp(54px, 14vw, 92px);
+  }
+
+  .impact-points {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-points article {
+    min-height: 0;
+    padding: 36px 0 48px;
+  }
+
+  .impact-points article + article {
+    border-left: 0;
+    border-top: 1px solid rgba(242, 239, 231, 0.2);
+    padding-left: 0;
+  }
+
+  .impact-points h3 {
+    margin-top: 44px;
+  }
+
+  .ownership-block {
+    margin-top: 90px;
+  }
+
+  .ownership-block h2 {
+    margin-top: 48px;
+    font-size: clamp(50px, 13vw, 86px);
+  }
+
+  .ownership-disciplines {
+    margin-top: 56px;
+  }
+}
+/* =========================================
+   CASE STUDY END
+   ========================================= */
+
+.case-study-footer {
+  background: #171715;
+  color: #f2efe7;
+  padding: 0 3% 48px;
+}
+
+.case-study-footer a {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-top: 34px;
+  border-top: 1px solid rgba(242, 239, 231, 0.22);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.case-study-footer span {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(242, 239, 231, 0.55);
+}
+
+.case-study-footer strong {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 3vw, 54px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  transition: color 180ms ease;
+}
+
+.case-study-footer a:hover strong {
+  color: #f05236;
+}
+
+@media (max-width: 900px) {
+  .case-study-footer {
+    padding: 0 24px 36px;
+  }
+
+  .case-study-footer a {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
